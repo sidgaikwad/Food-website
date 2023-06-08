@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+   box-sizing : border-box;
+}
+
+:root {
+    --navbar-height: 59px;
+}
+
+/* navbar setting */
+#navbar {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    top: 0px;
+    align-items: center;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+/* Navigation bar- logo and image */
+#logo {
+    margin: 14px 30px;
+    justify-content: left;
+}
+
+#logo img {
+    margin: 4px Spx;
+    height: 32px;
+    border: 1px solid black;
+    border-radius: 65px;
+
+}
+
+/* Navigation bar- List styling */
+#navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li {
+    display: flex;
+    /* background-color: black; */
+    text-decoration: none;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    /* justify-content: right; */
+}
+.search{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-left: 640px;
+}
+.search input{
+    display: flex;
+    height: 25px;
+    border: 3px solid black;
+    border-radius: 3px;
+    background-color: gray;
+
+
+}
+
+.search button{
+    display: flex;
+    height: 25px;
+    margin: 0px;
+    background-color: gray;
+    border: 3px solid black;
+    border-radius: 2px;
+
+}
+.search img{
+    height: 21px;
+}
+
+#navbar ul li :hover {
+    background-color: white;
+    color: black;
+    padding: 0px 0px 5px 0px;
+    /* text-decoration: underline; */
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* Designing and Styling home section */
+#home {
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before {
+    content: "";
+    background: url("/bg-img/Lovepik_com-400155932-crayfish-food-background.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+
+}
+
+#home h1 {
+    color: white;
+}
+
+#home p {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Services section */
+
+#services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 34px;
+
+}
+
+#services .box {
+    border: 2px solid lightslategrey;
+    padding: 34px;
+    margin: 3px 34px;
+    border-radius: 24px;
+    background-color: grey;
+
+}
+
+
+
+#services .box img {
+    height: 140px;
+    margin: auto;
+    display: block;
+
+}
+
+#services .box p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* client section */
+#client-container{
+    height: 400px;
+    position: relative;
+}
+
+#client-container ::before{
+    content: "";
+    background: url("/bg-img/food-g2ee90bd7a_1920.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 34px;
+
+}
+#clients .client-item{
+    padding: 0px 14px;
+    border-radius: 24px;
+    margin: 3px 6px;
+
+}
+#clients .client-item img{
+    height: 140px;
+
+}
+
+/* contact section */
+#contact-container{
+    display: flex;
+    flex-direction: column;
+    margin: 34px 0px 0px 0px;
+    /* height: 100%; */
+    width: 100%;
+    position: relative;
+}
+#contact-container ::before{
+    content: "";
+    position: absolute;
+    background: url("/bg-img/coffee-gd2a467fca_1920.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+.heading{
+  margin-left: 220px;
+  font-size: 2.3rem;
+  color: gray;
+}
+#contact-box{
+    display: flex;
+    margin: 0px 0px 50px 220px;
+    display: flex;
+    justify-content: left;
+    align-items: top;
+}
+
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin:10px 0px;
+    width: 250px;
+    font-size: 1.4rem;
+    color: gray;
+}
+
+.form-group input ,textarea{
+    color: white;
+    background-color: grey;
+
+}
+
+
+
+/* footer styling and desinging */
+footer{
+    background-color: black;
+    color: white;
+    padding: 4px 10px;
+    /* opacity: 0.7; */
+
+}
